@@ -1,11 +1,13 @@
 import { Provider } from 'react-redux';
 import store from "./lib/redux";
-import TaskList from "./components/TaskList";
+import PureInboxScreen from "./components/InboxScreen";
+
+import './index.css';
 
 function App() {
   return (
     <Provider store={store}>
-      <TaskList />
+      <PureInboxScreen />
     </Provider>
   );
 }
